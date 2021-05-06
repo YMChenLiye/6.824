@@ -1,6 +1,6 @@
 #! /bin/bash
 
-MYDIR=$(dirname $(greadlink -f "$0"))
+MYDIR=$(dirname $(readlink -f "$0"))
 cd $MYDIR
 
 git submodule update --init --recursive
